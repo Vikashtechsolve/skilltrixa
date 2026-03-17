@@ -4,7 +4,6 @@ import { Empowering } from '../component/Empowering';
 import { AboutVTS } from '../component/AboutVTS';
 import TestimonialsPage from '../component/TestimonialsPage';
 import WhatWeBring from '../component/WhatWeBring';
-import OurTeam from '../component/OurTeam';
 import Milestones from '../component/Milestones';
 
 const About = () => {
@@ -16,7 +15,6 @@ const About = () => {
                 <AboutVTS/>
                 <TestimonialsPage videoUrl={"https://www.w3schools.com/html/mov_bbb.mp4"} testimonialImg={thumbNail} title={""} />
                 <WhatWeBring/>
-                <OurTeam/>
                 <Milestones/>
             </div>
         </Layout>

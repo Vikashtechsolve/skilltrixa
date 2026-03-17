@@ -33,7 +33,7 @@ const stories = [
     image: Rohit,
     logo: microsoft,
     text:
-      "I had zero backend knowledge before joining VTS. The structured learning, live projects, and internship experience helped me understand real-world development. I secured a Frontend Developer role within weeks of completing the program.",
+      "I had zero backend knowledge before joining Skilltrixa. The structured learning, live projects, and internship experience helped me understand real-world development. I secured a Frontend Developer role within weeks of completing the program.",
   },
   {
     id: 3,
@@ -133,7 +133,7 @@ export default function SuccessStories() {
         </h2>
 
         <p className="text-gray-600 mt-3 text-sm sm:text-base lg:text-lg max-w-xl mx-auto">
-          See how VTS learners transformed their skills into high-paying tech roles
+          See how Skilltrixa learners transformed their skills into high-paying tech roles
         </p>
 
       </div>

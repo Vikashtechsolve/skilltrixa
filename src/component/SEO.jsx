@@ -2,11 +2,11 @@
 import { Helmet } from "react-helmet-async";
 
 const SEO = ({
-  title = "VTS | Learn and Grow with Expert Mentors",
-  description = "VTS is India’s leading tech learning platform. Master Java, Spring Boot, and React from industry experts.",
-  keywords = "VTS, Java Training, Spring Boot, React, Full Stack, Coding Bootcamp, Developer Courses",
-  url = "https://vikastechsolutions.com",
-  image = "https://vikastechsolutions.com/images/preview.png",
+  title = "Skilltrixa | Learn and Grow with Expert Mentors",
+  description = "Skilltrixa is India’s leading tech learning platform. Master Java, Spring Boot, and React from industry experts.",
+  keywords = "Skilltrixa, Java Training, Spring Boot, React, Full Stack, Coding Bootcamp, Developer Courses",
+  url = "https://skilltrixa.com",
+  image = "https://skilltrixa.com/images/preview.png",
 }) => (
   <Helmet>
     <title>{title}</title>

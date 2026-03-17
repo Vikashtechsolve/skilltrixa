@@ -18,10 +18,10 @@ const JoinUs = () => {
   return (
     <Layout>
       <SEO
-        title="Join as a Trainer | VTS"
-        description="Apply to become a trainer at VTS. Teach Java, Spring Boot, or React and help shape the next generation of developers."
-        url="https://vikastechsolutions.com/joinus"
-        image="https://vikastechsolutions.com/images/join-us.png"
+        title="Join as a Trainer | Skilltrixa"
+        description="Apply to become a trainer at Skilltrixa. Teach Java, Spring Boot, or React and help shape the next generation of developers."
+        url="https://skilltrixa.com/joinus"
+        image="https://skilltrixa.com/images/join-us.png"
       />
       <JoinusForm />
     </Layout>

@@ -74,7 +74,7 @@ function AboutVTS() {
               animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              What is VTS?
+              What is Skilltrixa?
             </motion.h1>
             <Sparkles className="w-8 h-8 text-[#ED0331]" />
           </div>
@@ -95,7 +95,7 @@ function AboutVTS() {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                At <span className="font-semibold text-[#ED0331]">Vikash Tech Solutions (VTS)</span>, we're on a mission to make learning simple, affordable, and impactful. We bridge the gap between traditional education and real-world skills by offering practical programs like Masterclasses, 1:1 Mentorship, Online Contests, Resume Reviews, and Live Doubt Solving Sessions.
+                At <span className="font-semibold text-[#ED0331]">Skilltrixa (powered by Deviktech Education)</span>, we're on a mission to make learning simple, affordable, and impactful. We bridge the gap between traditional education and real-world skills by offering practical programs like Masterclasses, 1:1 Mentorship, Online Contests, Resume Reviews, and Live Doubt Solving Sessions.
               </p>
             </motion.div>
 

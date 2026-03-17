@@ -270,7 +270,7 @@ const JoinUsForm = () => {
             >
               <h2 className="text-2xl md:text-3xl font-bold font-playfair heading-primary mb-6 flex items-center gap-3">
                 <Award className="w-8 h-8 text-[#ED0331]" />
-                Why Join VTS?
+                Why Join Skilltrixa?
               </h2>
               <div className="space-y-4">
                 {whyJoin.map((item, index) => {

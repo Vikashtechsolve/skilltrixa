@@ -1,39 +1,20 @@
-  import React, { useState, useRef, useEffect } from "react";
-  import { createPortal } from "react-dom";
-  import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
-  import { Link, useNavigate } from "react-router-dom";
-  import logo from "../assets/logo.png";
-  import scrolledLogo from "../assets/vts.svg";
+import React, { useState, useRef } from "react";
+import { createPortal } from "react-dom";
+import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
-  const Navbar = () => {
+const logo = "/logo.svg";
+
+const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [mobileDropdownOpen, setMobileDropdownOpen] = useState(null);
     const [openDropdown, setOpenDropdown] = useState(null);
     const [dropdownPosition, setDropdownPosition] = useState({ top: 0, left: 0 });
-    const [isScrolled, setIsScrolled] = useState(false);
 
     const timeoutRef = useRef(null);
     const navRefs = useRef({});
-    const navigate = useNavigate();
 
     const links = [
-      {
-    name: "Courses",
-    dropdown: [
-      {
-        name: "Full Stack Development",
-        description:
-          "Become a job-ready full stack developer with hands-on projects and real-world training.",
-        href: "/fullstack-developer",
-      },
-      {
-        name: "Data Analytics",
-        description:
-          "Learn data analysis, visualization, and tools like Excel, SQL, and Python to grow your career.",
-        href: "/data-analytics",
-      },
-    ],
-  },
       {
         name: "Our Programs",
         dropdown: [
@@ -76,7 +57,7 @@
             name: "LMS Portal",
             description:
               "Access a complete online learning management system with courses and training materials.",
-            href: "https://lms.vikashtechsolution.com/",
+            href: "https://lms.skilltrixa.com/",
           },
           {
             name: "Interview Portal",
@@ -84,24 +65,11 @@
               "Experience an advanced interview platform with scheduling, evaluation, and feedback tools.",
             href: "/login",
           },
-          {
-            name: "Manpower Management",
-            description:
-              "Streamline employee tracking, task allocation, and attendance management.",
-            href: "/login",
-          },
         ],
       },
       { name: "About us", href: "/aboutus" },
       { name: "Blogs", href: "/blogs" },
     ];
-
-    // ✅ Scroll effect only for desktop background blur
-    useEffect(() => {
-      const handleScroll = () => setIsScrolled(window.scrollY > 10);
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
 
     const handleMouseEnter = (name) => {
       if (timeoutRef.current) clearTimeout(timeoutRef.current);
@@ -125,12 +93,11 @@
 
     return (
       <nav className="sticky top-0 left-0 z-[1000] w-full">
-        {/* ✅ MOBILE NAVBAR */}
-        <div className="md:hidden flex items-center justify-between w-full bg-black px-4 py-3 relative z-[1000] shadow-lg">
-          {/* ✅ Logo (no scroll change) */}
+        {/* Mobile navbar */}
+        <div className="md:hidden flex items-center justify-between w-full bg-black min-h-[76px] px-4 py-2 pl-7 relative z-[1000] shadow-lg">
           <Link
             to="/"
-            className="relative h-12 w-36 flex items-center justify-center bg-white rounded-full"
+            className="flex items-center justify-center h-14 w-52 min-w-52 bg-white rounded-full px-6 py-3 shrink-0 overflow-hidden hover:opacity-95 transition-opacity"
             onClick={() => {
               setIsOpen(false);
               setMobileDropdownOpen(null);
@@ -138,12 +105,12 @@
           >
             <img
               src={logo}
-              alt="VTS Logo"
-              className="h-45 w-auto transition-all duration-300"
+              alt="Skilltrixa Logo"
+              className="h-full w-full object-contain object-center pointer-events-none select-none"
             />
           </Link>
 
-          <div className="flex items-center">
+          <div className="flex items-center gap-2">
             {/* 🔁 Swapped: Mobile Our Programs Button (showing instead of Products) */}
             <button
               onClick={() => toggleMobileDropdown("Our Programs")}
@@ -256,27 +223,21 @@
           </div>
         )}
 
-        {/* ✅ DESKTOP NAVBAR */}
-        <div
-          className={`hidden md:flex items-center justify-between w-full relative z-[1000] transition-all duration-300 ${
-            isScrolled
-              ? "backdrop-blur-md bg-black/70 shadow-lg border-b border-white/20"
-              : "bg-transparent"
-          }`}
-        >
+        {/* Desktop navbar - solid left (white) + right (black), no content showing through on scroll */}
+        <div className="hidden md:flex items-center w-full relative z-[1000] min-h-[96px] py-3 pl-12 bg-white">
           <Link
             to="/"
-            className="relative h-12 w-60 flex items-center justify-center cursor-pointer"
+            className="flex items-center justify-center h-20 w-96 max-w-[22rem] shrink-0 overflow-hidden pl-3 pr-4 hover:opacity-90 transition-opacity"
             onClick={() => setOpenDropdown(null)}
           >
             <img
-              src={isScrolled ? scrolledLogo : logo}
-              alt="VTS Logo"
-              className="h-45 w-auto transition-all duration-300"
+              src={logo}
+              alt="Skilltrixa Logo"
+              className="h-full w-full object-contain object-left pointer-events-none select-none"
             />
           </Link>
 
-          <div className="flex items-center justify-end px-6 py-2 w-[80%] ml-auto bg-black navbar-clip-path">
+          <div className="flex items-center justify-end px-6 py-2 flex-1 min-w-0 bg-black navbar-clip-path">
             <div className="flex space-x-12 text-lg font-medium text-white mr-6">
               {links.map((link) => (
                 <div

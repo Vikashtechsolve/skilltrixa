@@ -48,7 +48,7 @@ const RazorpayPayment = ({
         key: data.key,
         amount: data.amount,
         currency: data.currency,
-        name: "VTS Test Store",
+        name: "Skilltrixa",
         description: "Payment",
         order_id: data.orderId,
         prefill: {

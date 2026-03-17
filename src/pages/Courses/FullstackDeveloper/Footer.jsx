@@ -28,7 +28,7 @@ export default function Footer() {
           <img src={logo} className="h-10 mb-4" />
 
           <h3 className="text-red-700 font-semibold mb-3">
-            ABOUT VIKAS TECH SOLUTIONS
+            ABOUT SKILLTRIXA
           </h3>
 
           <p className="text-gray-600 leading-relaxed">
@@ -80,12 +80,9 @@ export default function Footer() {
               <div className="font-semibold">Address:</div>
 
               <div className="text-gray-600">
-                Vikas Tech Solutions,
+                No.112, Ground Floor, 2nd Cross C.K.G Road,
                 <br />
-                3rd Floor, ABC Tower,
-                <br />
-                Sector-15, Noida,
-                Uttar Pradesh, India
+                Nagayanapalya, M.S. Nagar Bangalore, Karnataka, India - 560033
               </div>
             </div>
 
@@ -101,7 +98,7 @@ export default function Footer() {
               <div className="font-semibold">Email:</div>
 
               <div className="text-gray-600">
-                support@vikastechsolutions.com
+                support@Skilltrixa.com
               </div>
             </div>
 
@@ -156,7 +153,7 @@ export default function Footer() {
 
 
         <div className="text-red-700 text-sm">
-          Copyright © 2025 Vikas Tech Solutions
+          Copyright © 2025 Skilltrixa
         </div>
 
 

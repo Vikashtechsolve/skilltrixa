@@ -12,7 +12,7 @@ const WhyVTS = () => {
       <h2 className="text-center text-2xl sm:text-3xl font-normal mb-10 sm:mb-14 lg:mb-16">
         What makes{" "}
         <span className="text-red-700 text-3xl font-semibold border-b-2 border-red-700 pb-1 relative -top-2">
-          VTS
+          Skilltrixa
         </span>{" "}
         Different
       </h2>

@@ -98,7 +98,7 @@ const Hero = () => {
               </div>
             </span>
             <br />
-            <span className="text-gray-900">with Vikash Tech Solution.</span>
+            <span className="text-gray-900">with Skilltrixa.</span>
           </h1>
 
           <p className="text-red-700 text-lg sm:text-xl md:text-2xl font-semibold font-nunito leading-tight">

@@ -23,12 +23,12 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
         <div className="flex items-center justify-center py-6 border-b border-white/20">
           <div className="flex flex-col items-center bg-white rounded-full px-4 py-2">
             <span className="text-3xl font-extrabold leading-none">
-              <span className="text-black">V</span>
-              <span className="text-red-600">T</span>
               <span className="text-black">S</span>
+              <span className="text-red-600">K</span>
+              <span className="text-black">ILL</span>
             </span>
             <p className="text-[10px] text-red-600 font-semibold mt-1 tracking-wide">
-              VIKASH TECH SOLUTION
+              SKILLTRIXA
             </p>
           </div>
         </div>

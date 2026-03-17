@@ -7,11 +7,11 @@ import {
 } from "lucide-react";
 import axios from "axios";
 import womenmentor from "../assets/womenmentor.png";
-import vtsImage from "../assets/logo.png";
+const vtsImage = "/logo.svg";
 import linkedinIcon from "../assets/linkedin.png";
 import instagramIcon from "../assets/instagram.svg";
 
-const baseUrl = import.meta.env.VITE_APP_API_URL;
+const baseUrl = import.meta.env.VITE_APP_API_URL; 
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -80,16 +80,16 @@ const ContactUs = () => {
   ];
 
   const contactInfo = [
-    { icon: Mail, label: "Email", value: "contact@vikastechsolutions.com", link: "mailto:contact@vikastechsolutions.com" },
+    { icon: Mail, label: "Email", value: "support@Skilltrixa.com", link: "mailto:support@Skilltrixa.com" },
     { icon: Phone, label: "Phone", value: "+91 98765 43210", link: "tel:+919876543210" },
-    { icon: MapPin, label: "Location", value: "India", link: null },
+    { icon: MapPin, label: "Location", value: "No.112, Ground Floor, 2nd Cross C.K.G Road, Nagayanapalya, M.S. Nagar Bangalore, Karnataka, India - 560033", link: null },
     { icon: Clock, label: "Response Time", value: "Within 24 hours", link: null },
   ];
 
   const socialLinks = [
-    { icon: Linkedin, name: "LinkedIn", image: linkedinIcon, color: "from-blue-600 to-blue-700", link: "https://linkedin.com" },
-    { icon: Instagram, name: "Instagram", image: instagramIcon, color: "from-pink-500 to-purple-600", link: "https://instagram.com" },
-    { icon: Youtube, name: "YouTube", image: null, color: "from-red-600 to-red-700", link: "https://youtube.com" },
+    { icon: Linkedin, name: "LinkedIn", image: linkedinIcon, color: "from-blue-600 to-blue-700", link: "https://www.linkedin.com/company/skilltrixa/" },
+    { icon: Instagram, name: "Instagram", image: instagramIcon, color: "from-pink-500 to-purple-600", link: "https://www.instagram.com/skilltrixa/" },
+    { icon: Youtube, name: "YouTube", image: null, color: "from-red-600 to-red-700", link: "https://www.youtube.com/channel/UCV3E1SHQNFEnbiwl0Sre0AQ" },
   ];
 
   const containerVariants = {
@@ -520,7 +520,7 @@ const ContactUs = () => {
               animate={isJourneyInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
               transition={{ duration: 0.4, delay: 0.1 }}
             >
-              Your Journey with VTS Starts Here
+              Your Journey with Skilltrixa Starts Here
             </motion.h2>
           </motion.div>
 
@@ -533,7 +533,7 @@ const ContactUs = () => {
           >
             <div className="flex-1 space-y-6">
               <p className="text-gray-600 text-lg md:text-xl leading-relaxed font-nunito">
-                At Vikas Tech Solutions, we believe every conversation is the start of a
+                At Skilltrixa, we believe every conversation is the start of a
                 solution. Whether you're a student seeking mentorship, an institute looking
                 for collaboration, or a learner with questions about our programs — our team
                 is always ready to assist you.
@@ -554,7 +554,7 @@ const ContactUs = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-[#ED0331]/10 to-[#87021C]/10 rounded-2xl blur-2xl"></div>
               <img
                 src={vtsImage}
-                alt="VTS"
+                alt="Skilltrixa"
                 className="relative w-[250px] h-[170px] md:w-[300px] md:h-[200px] rounded-2xl object-contain shadow-xl"
               />
             </motion.div>

@@ -16,9 +16,6 @@ import AutoPay from "./utils/AutoPay";
 import BlogPage from "./pages/BlogPage";
 import BlogDetailPage from "./pages/BlogDetailPage";
 import JoinUs from "./pages/JoinUs";
-import FullStack from "./pages/Courses/FullstackDeveloper/HeroSection";
-import DataAnalyticsProgram from "./pages/Courses/DataAnalytics/DataAnalyticsProgram";
-
 const App = () => {
   return (
     <Router>
@@ -41,8 +38,6 @@ const App = () => {
           <Route path="/pay" element={<AutoPay />} />
           <Route path="/blogs" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogDetailPage />} />
-          <Route path="/fullstack-developer" element={ <FullStack /> } />
-          <Route path="/data-analytics" element={ <DataAnalyticsProgram /> } />
 
         </Routes>
       <ScrollToTop />

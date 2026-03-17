@@ -32,7 +32,7 @@ const stories = [
     company: "Microsoft",
     image: Rohit,
     logo: microsoft,
-    text: "I had zero backend knowledge before joining VTS. The structured learning and internship helped me secure a frontend role quickly.",
+    text: "I had zero backend knowledge before joining Skilltrixa. The structured learning and internship helped me secure a frontend role quickly.",
   },
   {
     id: 3,
@@ -118,7 +118,7 @@ export default function DataSuccessStories() {
         </h2>
 
         <p className="text-gray-600 mt-3 text-sm md:text-lg">
-          See how VTS learners transformed their skills into high-paying tech
+          See how Skilltrixa learners transformed their skills into high-paying tech
           roles
         </p>
       </div>

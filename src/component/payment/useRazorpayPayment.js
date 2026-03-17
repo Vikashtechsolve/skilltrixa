@@ -30,7 +30,7 @@ export const useRazorpayPayment = (baseUrl) => {
           key: data.key,
           amount: data.amount,
           currency: data.currency,
-          name: "VTS Academy",
+          name: "Skilltrixa",
           description: description || "Payment",
           order_id: data.orderId,
           prefill: prefill,

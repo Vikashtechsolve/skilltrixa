@@ -114,7 +114,7 @@ export default function OurTeam() {
     {
       name: "VIKAS DUBEY",
       role: "FOUNDER & TECH MENTOR",
-      description: "Vikash Dubey is the visionary behind Vikas Tech Solutions, dedicated to transforming the way students and professionals learn. With deep expertise in full-stack development and product architecture.",
+      description: "Vikash Dubey is the visionary behind Skilltrixa, dedicated to transforming the way students and professionals learn. With deep expertise in full-stack development and product architecture.",
       imagePlaceholder: "https://res.cloudinary.com/dc4gqqd35/image/upload/v1760116012/WhatsApp_Image_2025-10-10_at_21.00.46_s5xkzu.jpg"
     },
     {

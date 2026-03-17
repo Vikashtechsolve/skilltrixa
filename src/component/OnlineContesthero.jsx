@@ -110,7 +110,7 @@ export default function OnlineContestHero() {
           className="text-center text-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold tracking-tight w-full mb-4"
           variants={itemVariants}
         >
-          Vikash Tech Online Contest Arena
+          Skilltrixa Online Contest Arena
         </motion.h1>
 
         <motion.div

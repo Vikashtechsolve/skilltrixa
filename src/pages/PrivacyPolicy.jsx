@@ -123,7 +123,7 @@ export default function PrivacyPolicy() {
         "Opt out of promotional communications.",
         "Request a copy of your data stored with us.",
       ],
-      contact: "support@vikastechsolutions.com",
+      contact: "support@Skilltrixa.com",
     },
     {
       number: 5,
@@ -221,7 +221,7 @@ export default function PrivacyPolicy() {
         "Payment data is processed safely through trusted and encrypted gateways.",
         "Users can request data or account deletion at any time.",
         "We use anonymized data only to improve user experience and platform performance.",
-        "Your privacy, trust, and safety are our top priorities at Vikas Tech Solution.",
+        "Your privacy, trust, and safety are our top priorities at Skilltrixa.",
       ],
     },
     {
@@ -243,16 +243,16 @@ export default function PrivacyPolicy() {
       items: [
         "If you have questions about this Privacy Policy, contact us at:",
       ],
-      contact: "hr@vikashtechsolution.com",
+      contact: "hr@Skilltrixa.com",
     },
   ];
 
   return (
     <Layout>
       <SEO
-        title="Privacy Policy | VTS"
-        description="Read Vikas Tech Solutions' privacy policy on how we protect and use your personal data securely."
-        url="https://vikastechsolutions.com/privacy-policy"
+        title="Privacy Policy | Skilltrixa"
+        description="Read Skilltrixa's privacy policy on how we protect and use your personal data securely."
+        url="https://skilltrixa.com/privacy-policy"
       />
       <div className="min-h-screen bg-gray-50 font-nunito">
         {/* Hero Header */}
@@ -303,7 +303,7 @@ export default function PrivacyPolicy() {
               transition={{ delay: 0.5 }}
               className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto"
             >
-              At <span className="font-semibold text-gray-900">Vikas Tech Solutions</span>, we value your trust and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you use our website and services.
+              At <span className="font-semibold text-gray-900">Skilltrixa</span>, we value your trust and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you use our website and services.
             </motion.p>
           </div>
         </motion.div>

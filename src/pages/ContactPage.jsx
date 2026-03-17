@@ -5,9 +5,9 @@ import SEO from "../component/SEO";
 const ContactPage = () => (
   <Layout>
     <SEO
-      title="Contact Us | VTS"
-      description="Get in touch with VTS for course details, trainer opportunities, or support."
-      url="https://vikastechsolutions.com/contact"
+      title="Contact Us | Skilltrixa"
+      description="Get in touch with Skilltrixa for course details, trainer opportunities, or support."
+      url="https://skilltrixa.com/contact"
     />
     <ContactUs />
   </Layout>

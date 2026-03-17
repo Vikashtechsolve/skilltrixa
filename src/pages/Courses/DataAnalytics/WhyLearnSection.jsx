@@ -14,7 +14,7 @@ const WhyLearnSection = () => {
         <span className="text-red-700 text-xl sm:text-2xl md:text-3xl font-semibold border-b-2 border-red-700 pb-1 relative md:-top-3">
           Data Analytics
         </span>{" "}
-        at VTS
+        at Skilltrixa
       </h2>
 
 
@@ -78,7 +78,7 @@ const WhyLearnSection = () => {
             </h3>
 
             <p className="text-gray-900 leading-relaxed text-sm sm:text-base">
-              VTS focuses on turning beginners into job-ready data analysts through industry-aligned curriculum, real-world datasets, and hands-on experience with enterprise-level analytics tools.
+              Skilltrixa focuses on turning beginners into job-ready data analysts through industry-aligned curriculum, real-world datasets, and hands-on experience with enterprise-level analytics tools.
             </p>
 
           </div>
@@ -106,7 +106,7 @@ const WhyLearnSection = () => {
             </h3>
 
             <p className="text-gray-900 leading-relaxed text-sm sm:text-base">
-              With partnerships across e-commerce, fintech, healthcare, and consulting domains, VTS connects learners to opportunities at India’s leading data-driven organizations.
+              With partnerships across e-commerce, fintech, healthcare, and consulting domains, Skilltrixa connects learners to opportunities at India’s leading data-driven organizations.
             </p>
 
           </div>

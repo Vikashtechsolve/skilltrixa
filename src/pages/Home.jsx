@@ -28,10 +28,10 @@ const Home = () => {
   return (
     <Layout>
       <SEO
-        title="VTS | Learn, Grow & Build Your Future"
-        description="Master Java, Spring Boot, React, and Full Stack with top mentors. Learn online or offline with VTS."
-        url="https://vikastechsolutions.com/"
-        image="https://vikastechsolutions.com/images/preview-home.png"
+        title="Skilltrixa | Learn, Grow & Build Your Future"
+        description="Master Java, Spring Boot, React, and Full Stack with top mentors. Learn online or offline with Skilltrixa."
+        url="https://skilltrixa.com/"
+        image="https://skilltrixa.com/images/preview-home.png"
       />
 
       <div id="home">

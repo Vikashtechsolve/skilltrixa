@@ -76,7 +76,7 @@ const LoginPage = () => {
       startTransition(() => {
         if (role === "admin") {
           const tokenParam = encodeURIComponent(token);
-          window.location.href = `https://admin.vikashtechsolution.com/?token=${tokenParam}`;
+          window.location.href = `https://admin.skilltrixa.com/?token=${tokenParam}`;
         } else {
           navigate("/unauthorized");
         }
