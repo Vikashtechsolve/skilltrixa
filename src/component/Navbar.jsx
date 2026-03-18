@@ -57,13 +57,19 @@ const Navbar = () => {
             name: "LMS Portal",
             description:
               "Access a complete online learning management system with courses and training materials.",
-            href: "https://lms.skilltrixa.com/",
+            href: "https://learn.skilltrixa.com/",
           },
           {
-            name: "Interview Portal",
+            name: "Test Platform",
             description:
-              "Experience an advanced interview platform with scheduling, evaluation, and feedback tools.",
-            href: "/login",
+              "Practice on real coding problems, take tests, and improve your skills with structured assessments.",
+            href: "https://test.skilltrixa.com/",
+          },
+          {
+            name: "Online Course",
+            description:
+              "Explore instructor-led online courses and start learning right away.",
+            href: "https://course.skilltrixa.com/",
           },
         ],
       },
@@ -90,6 +96,8 @@ const Navbar = () => {
     const toggleMobileDropdown = (name) => {
       setMobileDropdownOpen(mobileDropdownOpen === name ? null : name);
     };
+
+    const isExternalHref = (href) => typeof href === "string" && href.startsWith("http");
 
     return (
       <nav className="sticky top-0 left-0 z-[1000] w-full">
@@ -141,16 +149,31 @@ const Navbar = () => {
             {links
               .find((l) => l.name === "Our Programs")
               ?.dropdown?.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="block w-full mb-2 last:mb-0 rounded-md px-3 py-2 hover:bg-gray-100 transition-colors duration-300"
-                >
-                  <span className="font-semibold">{item.name}</span>
-                  <span className="block text-gray-700 text-sm mt-1">
-                    {item.description}
-                  </span>
-                </Link>
+                isExternalHref(item.href) ? (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full mb-2 last:mb-0 rounded-md px-3 py-2 hover:bg-gray-100 transition-colors duration-300"
+                  >
+                    <span className="font-semibold">{item.name}</span>
+                    <span className="block text-gray-700 text-sm mt-1">
+                      {item.description}
+                    </span>
+                  </a>
+                ) : (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="block w-full mb-2 last:mb-0 rounded-md px-3 py-2 hover:bg-gray-100 transition-colors duration-300"
+                  >
+                    <span className="font-semibold">{item.name}</span>
+                    <span className="block text-gray-700 text-sm mt-1">
+                      {item.description}
+                    </span>
+                  </Link>
+                )
               ))}
           </div>
         )}
@@ -275,20 +298,39 @@ const Navbar = () => {
                             onMouseLeave={handleMouseLeave}
                           >
                             {link.dropdown.map((item) => (
-                              <Link
-                                key={item.name}
-                                to={item.href}
-                                className="block mb-2 last:mb-0 hover:bg-gray-50 transition-all duration-300 rounded-md px-2 py-2"
-                              >
-                                <div className="flex flex-col">
-                                  <span className="font-semibold text-black text-lg">
-                                    {item.name}
-                                  </span>
-                                  <span className="text-gray-600 hover:text-red-600 transition-colors duration-300 text-sm">
-                                    {item.description}
-                                  </span>
-                                </div>
-                              </Link>
+                              isExternalHref(item.href) ? (
+                                <a
+                                  key={item.name}
+                                  href={item.href}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="block mb-2 last:mb-0 hover:bg-gray-50 transition-all duration-300 rounded-md px-2 py-2"
+                                >
+                                  <div className="flex flex-col">
+                                    <span className="font-semibold text-black text-lg">
+                                      {item.name}
+                                    </span>
+                                    <span className="text-gray-600 hover:text-red-600 transition-colors duration-300 text-sm">
+                                      {item.description}
+                                    </span>
+                                  </div>
+                                </a>
+                              ) : (
+                                <Link
+                                  key={item.name}
+                                  to={item.href}
+                                  className="block mb-2 last:mb-0 hover:bg-gray-50 transition-all duration-300 rounded-md px-2 py-2"
+                                >
+                                  <div className="flex flex-col">
+                                    <span className="font-semibold text-black text-lg">
+                                      {item.name}
+                                    </span>
+                                    <span className="text-gray-600 hover:text-red-600 transition-colors duration-300 text-sm">
+                                      {item.description}
+                                    </span>
+                                  </div>
+                                </Link>
+                              )
                             ))}
                           </div>,
                           document.body
