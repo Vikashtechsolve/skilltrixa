@@ -126,7 +126,7 @@ const Footer = () => {
 
       {/* BOTTOM */}
       <div className="flex flex-col md:flex-row justify-between items-center mt-6 pt-6  border-gray-300 text-base font-nunito text-gray-600">
-        <p className="text-[#ED0331] font-semibold mb-3 md:mb-0">Skilltrixa © 2025. All rights reserved.</p>
+        <p className="text-[#ED0331] font-semibold mb-3 md:mb-0">Skilltrixa © 2026 powered by Deviktech Education LLP</p>
         <div className="flex flex-wrap justify-center gap-4 md:gap-6">
           <a href="/masterClass" className="hover:text-[#ED0331] transition-colors">Master Class</a>
           <a href="oneToOneMentoring" className="hover:text-[#ED0331] transition-colors">Mentorship</a>
