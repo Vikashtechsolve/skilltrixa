@@ -57,7 +57,7 @@ const Navbar = () => {
             name: "LMS Portal",
             description:
               "Access a complete online learning management system with courses and training materials.",
-            href: "https://learn.skilltrixa.com/",
+            href: "https://course.skilltrixa.com/",
           },
           {
             name: "Test Platform",
@@ -69,7 +69,7 @@ const Navbar = () => {
             name: "Online Course",
             description:
               "Explore instructor-led online courses and start learning right away.",
-            href: "https://course.skilltrixa.com/",
+            href: "https://learn.skilltrixa.com/",
           },
         ],
       },
