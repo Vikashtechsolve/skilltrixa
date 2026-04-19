@@ -73,6 +73,11 @@ const Navbar = () => {
           },
         ],
       },
+      {
+        name: "Placements",
+        href: "/campus-placements",
+        title: "Campus placements",
+      },
       { name: "About us", href: "/aboutus" },
       { name: "Blogs", href: "/blogs" },
     ];
@@ -188,6 +193,7 @@ const Navbar = () => {
                   <Link
                     key={link.name}
                     to={link.href}
+                    title={link.title}
                     className="block text-lg font-semibold border-b border-gray-600 w-full px-3 py-2 hover:text-red-500"
                   >
                     {link.name}
@@ -261,11 +267,12 @@ const Navbar = () => {
           </Link>
 
           <div className="flex items-center justify-end px-6 py-2 flex-1 min-w-0 bg-black navbar-clip-path">
-            <div className="flex space-x-12 text-lg font-medium text-white mr-6">
+            <div className="flex min-w-0 flex-1 justify-end">
+              <div className="mr-6 flex max-w-full min-w-0 flex-nowrap items-center justify-end gap-x-5 md:gap-x-6 lg:gap-x-8 xl:gap-x-10 overflow-x-auto overscroll-x-contain pr-1 text-lg font-medium text-white [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
               {links.map((link) => (
                 <div
                   key={link.name}
-                  className="relative"
+                  className="relative shrink-0"
                   ref={(el) => (navRefs.current[link.name] = el)}
                   onMouseEnter={() => link.dropdown && handleMouseEnter(link.name)}
                   onMouseLeave={() => link.dropdown && handleMouseLeave()}
@@ -273,14 +280,18 @@ const Navbar = () => {
                   {!link.dropdown ? (
                     <Link
                       to={link.href}
-                      className="border-b-2 border-transparent hover:border-red-500 transition-all duration-300"
+                      title={link.title}
+                      className="inline-block whitespace-nowrap border-b-2 border-transparent hover:border-red-500 transition-all duration-300 pb-0.5"
                     >
                       {link.name}
                     </Link>
                   ) : (
                     <>
-                      <button className="flex items-center border-b-2 border-transparent hover:border-red-500 transition-all duration-300">
-                        {link.name} <FiChevronDown className="ml-1" />
+                      <button
+                        type="button"
+                        className="flex items-center whitespace-nowrap border-b-2 border-transparent hover:border-red-500 transition-all duration-300 pb-0.5"
+                      >
+                        {link.name} <FiChevronDown className="ml-1 shrink-0" />
                       </button>
 
                       {openDropdown === link.name &&
@@ -339,19 +350,20 @@ const Navbar = () => {
                   )}
                 </div>
               ))}
+              </div>
             </div>
 
             {/* CONTACT & LOGIN */}
-            <div className="flex space-x-4 px-2 py-2 rounded-lg">
+            <div className="flex shrink-0 flex-nowrap items-center gap-4 px-2 py-2">
               <Link
                 to="/contactUs"
-                className="text-center border-2 border-white text-red-600 px-4 py-2 rounded-full font-semibold hover:bg-red-600 hover:text-white transition-all duration-300 text-[15px]"
+                className="whitespace-nowrap rounded-full border-2 border-white px-4 py-2 text-center text-[15px] font-semibold text-red-600 transition-all duration-300 hover:bg-red-600 hover:text-white"
               >
                 Contact Us
               </Link>
               <Link
                 to="/join-us"
-                className="text-center border-2 border-white text-red-600 px-4 py-2 rounded-full font-bold hover:bg-red-600 hover:text-white transition-all duration-300"
+                className="whitespace-nowrap rounded-full border-2 border-white px-4 py-2 text-center text-[15px] font-bold text-red-600 transition-all duration-300 hover:bg-red-600 hover:text-white"
               >
                 Join us
               </Link>

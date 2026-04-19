@@ -16,6 +16,7 @@ import AutoPay from "./utils/AutoPay";
 import BlogPage from "./pages/BlogPage";
 import BlogDetailPage from "./pages/BlogDetailPage";
 import JoinUs from "./pages/JoinUs";
+import CampusPlacements from "./pages/CampusPlacements";
 const App = () => {
   return (
     <Router>
@@ -24,7 +25,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/join-us" element={<JoinUs />} /> 
+          <Route path="/join-us" element={<JoinUs />} />
+          <Route path="/campus-placements" element={<CampusPlacements />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/masterClass" element={<MasterClasspages />} />  {/* Updated path */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
