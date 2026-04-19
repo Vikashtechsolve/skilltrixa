@@ -105,12 +105,12 @@ const Navbar = () => {
     const isExternalHref = (href) => typeof href === "string" && href.startsWith("http");
 
     return (
-      <nav className="sticky top-0 left-0 z-[1000] w-full">
+      <nav className="sticky top-0 left-0 z-[1000] m-0 w-full pt-0">
         {/* Mobile navbar */}
-        <div className="md:hidden flex items-center justify-between w-full bg-black min-h-[76px] px-4 py-2 pl-7 relative z-[1000] shadow-lg">
+        <div className="relative z-[1000] flex min-h-[64px] w-full items-center justify-between bg-black px-4 pb-1.5 pl-7 pt-0 shadow-lg md:hidden">
           <Link
             to="/"
-            className="flex items-center justify-center h-14 w-52 min-w-52 bg-white rounded-full px-6 py-3 shrink-0 overflow-hidden hover:opacity-95 transition-opacity"
+            className="flex h-12 w-48 min-w-48 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white px-5 py-2 hover:opacity-95 transition-opacity"
             onClick={() => {
               setIsOpen(false);
               setMobileDropdownOpen(null);
@@ -252,11 +252,11 @@ const Navbar = () => {
           </div>
         )}
 
-        {/* Desktop navbar - solid left (white) + right (black), no content showing through on scroll */}
-        <div className="hidden md:flex items-center w-full relative z-[1000] min-h-[96px] py-3 pl-12 bg-white">
+        {/* Desktop navbar - solid left (white) + right (black), flush to top of viewport */}
+        <div className="relative z-[1000] hidden min-h-[68px] w-full items-stretch bg-white py-0 pl-10 pt-0 lg:pl-12 md:flex">
           <Link
             to="/"
-            className="flex items-center justify-center h-20 w-96 max-w-[22rem] shrink-0 overflow-hidden pl-3 pr-4 hover:opacity-90 transition-opacity"
+            className="flex h-[68px] max-w-[20rem] w-96 shrink-0 items-center justify-center overflow-hidden pl-3 pr-4 hover:opacity-90 transition-opacity lg:max-w-[22rem]"
             onClick={() => setOpenDropdown(null)}
           >
             <img
@@ -266,9 +266,9 @@ const Navbar = () => {
             />
           </Link>
 
-          <div className="flex items-center justify-end px-6 py-2 flex-1 min-w-0 bg-black navbar-clip-path">
+          <div className="navbar-clip-path flex min-h-[68px] min-w-0 flex-1 items-center justify-end bg-black px-4 py-0 lg:px-6">
             <div className="flex min-w-0 flex-1 justify-end">
-              <div className="mr-6 flex max-w-full min-w-0 flex-nowrap items-center justify-end gap-x-5 md:gap-x-6 lg:gap-x-8 xl:gap-x-10 overflow-x-auto overscroll-x-contain pr-1 text-lg font-medium text-white [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+              <div className="mr-4 flex max-w-full min-w-0 flex-nowrap items-center justify-end gap-x-4 md:gap-x-5 lg:mr-6 lg:gap-x-6 xl:gap-x-8 overflow-x-auto overscroll-x-contain pr-1 text-base font-medium text-white [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden lg:text-[17px]">
               {links.map((link) => (
                 <div
                   key={link.name}
@@ -354,16 +354,16 @@ const Navbar = () => {
             </div>
 
             {/* CONTACT & LOGIN */}
-            <div className="flex shrink-0 flex-nowrap items-center gap-4 px-2 py-2">
+            <div className="flex shrink-0 flex-nowrap items-center gap-3 px-1 py-0 lg:gap-4 lg:px-2">
               <Link
                 to="/contactUs"
-                className="whitespace-nowrap rounded-full border-2 border-white px-4 py-2 text-center text-[15px] font-semibold text-red-600 transition-all duration-300 hover:bg-red-600 hover:text-white"
+                className="whitespace-nowrap rounded-full border-2 border-white px-3 py-1.5 text-center text-sm font-semibold text-red-600 transition-all duration-300 hover:bg-red-600 hover:text-white lg:px-4 lg:py-2 lg:text-[15px]"
               >
                 Contact Us
               </Link>
               <Link
                 to="/join-us"
-                className="whitespace-nowrap rounded-full border-2 border-white px-4 py-2 text-center text-[15px] font-bold text-red-600 transition-all duration-300 hover:bg-red-600 hover:text-white"
+                className="whitespace-nowrap rounded-full border-2 border-white px-3 py-1.5 text-center text-sm font-bold text-red-600 transition-all duration-300 hover:bg-red-600 hover:text-white lg:px-4 lg:py-2 lg:text-[15px]"
               >
                 Join us
               </Link>

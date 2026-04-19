@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito+Sans:wght@400;500;600;700&family=Lato:wght@400;500;600&family=Lexend+Peta:wght@400;500&display=swap');
 @import "tailwindcss";
 
+/* Flush layout: no default browser gap above the navbar */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 /* ============================================
    FONT FAMILIES
    ============================================ */
@@ -415,7 +422,8 @@
    ============================================ */
 .navbar-clip-path {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
-  min-height: 60px;
+  /* Height comes from navbar row (e.g. min-h-20); avoid extra top gap */
+  min-height: 0;
 }
 
 /* ============================================

@@ -2,7 +2,29 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Layout from "../component/Layout";
 import SEO from "../component/SEO";
-import { FiCheckCircle, FiUsers, FiBookOpen, FiTrendingUp } from "react-icons/fi";
+import {
+  FiCheckCircle,
+  FiUsers,
+  FiBookOpen,
+  FiTrendingUp,
+  FiBriefcase,
+} from "react-icons/fi";
+
+/** Hiring partners & product companies our learners have joined (illustrative; names only). */
+const placementCompanies = [
+  { name: "Amazon", note: "E-commerce & cloud" },
+  { name: "Google", note: "Search & product" },
+  { name: "Microsoft", note: "Product & cloud" },
+  { name: "Adobe", note: "Creative cloud" },
+  { name: "Salesforce", note: "SaaS & CRM" },
+  { name: "Atlassian", note: "Product & dev tools" },
+  { name: "Uber", note: "Mobility & product" },
+  { name: "Flipkart", note: "E-commerce" },
+  { name: "Razorpay", note: "Fintech" },
+  { name: "Zomato", note: "Product & tech" },
+  { name: "Swiggy", note: "Product & ops tech" },
+  { name: "PhonePe", note: "Fintech" },
+];
 
 const stats = [
   {
@@ -67,16 +89,23 @@ const CampusPlacements = () => {
         image="https://skilltrixa.com/images/preview-home.png"
       />
 
-      <section className="relative bg-black text-white overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-red-900/40 via-black to-black pointer-events-none" />
-        <div className="relative max-w-6xl mx-auto px-6 py-16 md:py-24">
-          <p className="text-red-500 font-semibold tracking-wide uppercase text-sm mb-3">
+      <section className="relative overflow-hidden border-b border-gray-200 bg-gradient-to-b from-white via-gray-50 to-gray-100 text-gray-900">
+        <div
+          className="pointer-events-none absolute inset-0 opacity-[0.35]"
+          style={{
+            backgroundImage:
+              "radial-gradient(ellipse 80% 50% at 50% -20%, rgba(237, 3, 49, 0.12), transparent 70%)",
+          }}
+          aria-hidden
+        />
+        <div className="relative mx-auto max-w-6xl px-6 py-14 md:py-20">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-red-600">
             Campus partnerships
           </p>
-          <h1 className="text-3xl md:text-5xl font-bold leading-tight max-w-3xl">
+          <h1 className="max-w-3xl text-3xl font-bold leading-tight text-gray-900 md:text-5xl">
             Training that prepares students—and placements that open doors
           </h1>
-          <p className="mt-6 text-lg text-gray-300 max-w-2xl leading-relaxed">
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-gray-600">
             We work with colleges and universities to deliver structured skilling,
             assessments on our LMS and test platforms, and placement support so
             learners move from classroom concepts to confident interviews.
@@ -84,13 +113,13 @@ const CampusPlacements = () => {
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
               to="/contactus"
-              className="inline-flex items-center justify-center bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-3 rounded-full transition-colors"
+              className="inline-flex items-center justify-center rounded-full bg-red-600 px-8 py-3 font-semibold text-white transition-colors hover:bg-red-700"
             >
               Partner with us
             </Link>
             <Link
               to="/aboutus"
-              className="inline-flex items-center justify-center border-2 border-white/80 hover:bg-white hover:text-black text-white font-semibold px-8 py-3 rounded-full transition-colors"
+              className="inline-flex items-center justify-center rounded-full border-2 border-gray-300 bg-white px-8 py-3 font-semibold text-gray-900 transition-colors hover:border-gray-400 hover:bg-gray-50"
             >
               Why Skilltrixa
             </Link>
@@ -116,6 +145,48 @@ const CampusPlacements = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="border-b border-gray-200 bg-gradient-to-b from-white to-gray-50 py-14 md:py-20">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="flex flex-col items-center text-center md:flex-row md:items-start md:text-left md:gap-10">
+            <div className="mb-8 flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-red-100 text-red-600 md:mb-0">
+              <FiBriefcase className="h-7 w-7" aria-hidden />
+            </div>
+            <div className="max-w-3xl md:pt-1">
+              <p className="text-sm font-semibold uppercase tracking-wide text-red-600">
+                Placements & careers
+              </p>
+              <h2 className="mt-2 text-2xl font-bold text-gray-900 md:text-4xl">
+                Our students placed in top companies
+              </h2>
+              <p className="mt-4 text-lg leading-relaxed text-gray-600">
+                Learners from our campus and cohort programs have gone on to join product
+                teams and engineering orgs at global tech leaders and fast-growing
+                product companies—building real features, not just ticking checklists.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+            {placementCompanies.map(({ name, note }) => (
+              <div
+                key={name}
+                className="group flex flex-col rounded-xl border border-gray-200 bg-white p-4 shadow-sm transition-all hover:border-red-200 hover:shadow-md"
+              >
+                <span className="font-playfair text-lg font-semibold text-gray-900 md:text-xl">
+                  {name}
+                </span>
+                <span className="mt-1 text-xs text-gray-500 md:text-sm">{note}</span>
+              </div>
+            ))}
+          </div>
+
+          <p className="mx-auto mt-10 max-w-2xl text-center text-sm text-gray-500">
+            Roles include software development, data & analytics, and product-adjacent
+            engineering—outcomes vary by cohort, skills, and hiring cycles.
+          </p>
         </div>
       </section>
 
