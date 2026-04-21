@@ -1,4 +1,5 @@
 import Layout from "../component/Layout";
+import SEO from "../component/SEO";
 import MentorshipCards from "../component/mentorshipPage/MentorshipCards";
 import MentorshipDomain from "../component/mentorshipPage/MentorshipDomain";
 import MentorshipHero from "../component/mentorshipPage/MentorshipHero";
@@ -17,6 +18,13 @@ export default function OneToOneMentoring() {
 
   return (
     <Layout >
+        <SEO
+          title="1:1 Mentorship | Personalized Career Guidance | Skilltrixa"
+          description="Book one-to-one mentorship with Skilltrixa experts—personalized roadmaps, interview prep, and skill growth across domains."
+          keywords="tech mentorship India, one on one coding mentor, career guidance developers, Skilltrixa mentorship"
+          url="/oneToOneMentoring"
+          image="/images/preview-home.png"
+        />
         <MentorshipHero/>
         <WhatIsMentorship />
         <MentorshipCards/>

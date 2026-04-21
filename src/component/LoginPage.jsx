@@ -1,6 +1,8 @@
 import React, { useState, useTransition, useEffect } from "react";
 import { FiUser, FiLock } from "react-icons/fi";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import SEO from "./SEO";
+import { SITE_NAME } from "../config/seoConfig";
 //import Cookies from "js-cookie";
 
 /**
@@ -95,6 +97,12 @@ const LoginPage = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-50 px-4">
+      <SEO
+        title={`Login | ${SITE_NAME}`}
+        description="Authorized Skilltrixa login for trainers and internal users."
+        url="/login"
+        noindex
+      />
       <div className="bg-white shadow-xl rounded-2xl w-full max-w-md p-8 relative">
         <Link
           to="/"

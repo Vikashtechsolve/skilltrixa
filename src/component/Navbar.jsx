@@ -48,11 +48,29 @@ const Navbar = () => {
               "Ask questions anytime and clear concepts instantly with live mentor support.",
             href: "/doubt-solving",
           },
+          {
+            name: "Full Stack Developer Program",
+            description:
+              "MERN stack curriculum, projects, fees, and placement-aligned training—on the main Skilltrixa site.",
+            href: "/programs/full-stack-developer",
+          },
+          {
+            name: "Data Analytics Program",
+            description:
+              "Analytics curriculum, outcomes, hiring partners, and fees for career-ready analysts.",
+            href: "/programs/data-analytics",
+          },
         ],
       },
       {
         name: "Our Products",
         dropdown: [
+          {
+            name: "Products overview",
+            description:
+              "See Skilltrixa LMS, assessments, and online courses in one place before you sign in.",
+            href: "/products",
+          },
           {
             name: "LMS Portal",
             description:

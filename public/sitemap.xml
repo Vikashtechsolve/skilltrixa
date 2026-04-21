@@ -1,7 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://skilltrixa.com/</loc></url>
-  <url><loc>https://skilltrixa.com/join-us</loc></url>
-  <url><loc>https://skilltrixa.com/blog</loc></url>
-  <url><loc>https://skilltrixa.com/contact</loc></url>
-  <url><loc>https://skilltrixa.com/privacy-policy</loc></url>
+  <url><loc>https://skilltrixa.com/</loc><changefreq>weekly</changefreq><priority>1</priority></url>
+  <url><loc>https://skilltrixa.com/aboutus</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://skilltrixa.com/contactus</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://skilltrixa.com/blogs</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://skilltrixa.com/products</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://skilltrixa.com/join-us</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://skilltrixa.com/campus-placements</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://skilltrixa.com/privacy-policy</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://skilltrixa.com/masterClass</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://skilltrixa.com/oneToOneMentoring</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://skilltrixa.com/online-contests</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://skilltrixa.com/doubt-solving</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://skilltrixa.com/resume-review</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://skilltrixa.com/programs/full-stack-developer</loc><changefreq>weekly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://skilltrixa.com/programs/data-analytics</loc><changefreq>weekly</changefreq><priority>0.95</priority></url>
 </urlset>

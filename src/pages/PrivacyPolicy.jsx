@@ -252,7 +252,7 @@ export default function PrivacyPolicy() {
       <SEO
         title="Privacy Policy | Skilltrixa"
         description="Read Skilltrixa's privacy policy on how we protect and use your personal data securely."
-        url="https://skilltrixa.com/privacy-policy"
+        url="/privacy-policy"
       />
       <div className="min-h-screen bg-gray-50 font-nunito">
         {/* Hero Header */}

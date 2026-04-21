@@ -2,8 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Layout from '../component/Layout';
 import BlogDetail from '../component/blogs/BlogDetail';
+import SEO from '../component/SEO';
 import { getBlogBySlug } from '../services/blogApi';
 import { Loader2 } from 'lucide-react';
+import { SITE_URL, absoluteUrl, buildArticleSchema } from '../config/seoConfig';
+import { excerptFromBlog, blogOgImage } from '../utils/seoHelpers';
 
 const BlogDetailPage = () => {
   const { slug } = useParams();
@@ -81,8 +84,45 @@ const BlogDetailPage = () => {
     );
   }
 
+  const canonicalPath = `/blog/${slug}`;
+  const pageUrl = absoluteUrl(canonicalPath);
+  const description =
+    excerptFromBlog(blog, 'Read this article on Skilltrixa — tutorials and career insights from expert mentors.') ||
+    'Read this article on Skilltrixa.';
+  const ogImage = blogOgImage(blog, SITE_URL);
+  const published =
+    blog.date || blog.createdAt || blog.updatedAt || blog.modifiedAt;
+  const publishedIso = published ? new Date(published).toISOString() : undefined;
+  const modifiedIso = blog.updatedAt || blog.modifiedAt
+    ? new Date(blog.updatedAt || blog.modifiedAt).toISOString()
+    : publishedIso;
+
+  const articleLd = buildArticleSchema({
+    headline: blog.title,
+    description,
+    image: ogImage,
+    datePublished: publishedIso,
+    dateModified: modifiedIso,
+    authorName: blog.author,
+    url: pageUrl,
+    section: blog.category,
+  });
+
   return (
     <Layout>
+      <SEO
+        title={`${blog.title} | Skilltrixa Blog`}
+        description={description}
+        keywords={`Skilltrixa blog, ${blog.category || 'programming tutorials'}, tech careers India`}
+        url={canonicalPath}
+        image={ogImage}
+        type="article"
+        publishedTime={publishedIso}
+        modifiedTime={modifiedIso}
+        author={blog.author}
+        section={blog.category}
+        jsonLd={articleLd}
+      />
       <BlogDetail blog={blog} onBack={handleBack} onSelectBlog={handleSelectBlog} />
     </Layout>
   );

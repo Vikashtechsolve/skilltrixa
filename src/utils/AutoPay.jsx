@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import RazorpayPayment from "./RazorpayPayment";
+import SEO from "../component/SEO";
 
 const AutoPay = () => {
   const handleSuccess = (response) => {
@@ -17,6 +18,7 @@ const AutoPay = () => {
 
   return (
     <div style={{ padding: "50px" }}>
+      <SEO title="Payment | Skilltrixa" description="Secure checkout." url="/pay" noindex />
       <h2>💳 Auto Razorpay Payment Example</h2>
 
       {/* Button triggers payment, can be hidden if you want */}

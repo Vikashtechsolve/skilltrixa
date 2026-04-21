@@ -7,7 +7,7 @@ const ContactPage = () => (
     <SEO
       title="Contact Us | Skilltrixa"
       description="Get in touch with Skilltrixa for course details, trainer opportunities, or support."
-      url="https://skilltrixa.com/contact"
+      url="/contactus"
     />
     <ContactUs />
   </Layout>

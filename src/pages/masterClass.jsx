@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from '../component/Navbar'
 import Layout from '../component/Layout'
+import SEO from '../component/SEO'
 import UpcomingEvents from '../component/UpcomingEvents'
 import MasterClassHero from '../component/MasterclassHero'
 import WhyChooseMasterClass from '../component/WhyChooseMasterClass';
@@ -18,6 +18,13 @@ const faqData = data.masterclassFaq;
 const MasterClasspages = () => {
     return (
         <Layout>
+        <SEO
+          title="Masterclasses | Live Expert Sessions | Skilltrixa"
+          description="Join Skilltrixa masterclasses for trending tech topics, real-world case studies, and hands-on sessions led by industry mentors."
+          keywords="Skilltrixa masterclass, live coding sessions, tech workshops India, Java React Spring Boot training"
+          url="/masterClass"
+          image="/images/preview-home.png"
+        />
         <MasterClassHero/>
         <WhyChooseMasterClass/>
         <UpcomingEvents/>

@@ -85,8 +85,8 @@ const CampusPlacements = () => {
         title="Campus Placements & Training | Skilltrixa"
         description="Skilltrixa partners with universities for placements and intensive training in MERN, data analytics, AI/ML, DSA, and more. 10,000+ students trained."
         keywords="Skilltrixa, campus placements, university training, MERN stack, data analytics, AI ML, DSA, coding bootcamp India"
-        url="https://skilltrixa.com/campus-placements"
-        image="https://skilltrixa.com/images/preview-home.png"
+        url="/campus-placements"
+        image="/images/preview-home.png"
       />
 
       <section className="relative overflow-hidden border-b border-gray-200 bg-gradient-to-b from-white via-gray-50 to-gray-100 text-gray-900">

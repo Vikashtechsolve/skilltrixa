@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Layout from "../component/Layout";
 import SEO from "../component/SEO";
+import { buildOrganizationSchema, buildWebSiteSchema } from "../config/seoConfig";
 import Hero from "../component/Hero";
 import StatsSection from "../component/StatsSection";
 import WhatWeOffer from "../component/WhatWeOffer";
@@ -29,9 +30,10 @@ const Home = () => {
     <Layout>
       <SEO
         title="Skilltrixa | Learn, Grow & Build Your Future"
-        description="Master Java, Spring Boot, React, and Full Stack with top mentors. Learn online or offline with Skilltrixa."
-        url="https://skilltrixa.com/"
-        image="https://skilltrixa.com/images/preview-home.png"
+        description="Master Java, Spring Boot, React, full stack development, and data analytics with top mentors. Programs include masterclasses, mentorship, contests, and live doubt solving."
+        url="/"
+        image="/images/preview-home.png"
+        jsonLd={[buildOrganizationSchema(), buildWebSiteSchema()]}
       />
 
       <div id="home">

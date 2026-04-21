@@ -17,6 +17,8 @@ import FAQ from "../FullstackDeveloper/FAQ";
 import Fees from "./Fees";
 
 import Layout from "../../../component/Layout";
+import SEO from "../../../component/SEO";
+import { absoluteUrl, buildCourseSchema } from "../../../config/seoConfig";
 
 const DataAnalyticsProgram = () => {
 
@@ -31,8 +33,25 @@ const DataAnalyticsProgram = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const coursePath = "/programs/data-analytics";
+  const courseLd = buildCourseSchema({
+    name: "Data Analytics Program | Skilltrixa",
+    description:
+      "Build analytics skills with SQL, visualization, and workflows—structured curriculum, fees, hiring stories, and career outcomes.",
+    url: absoluteUrl(coursePath),
+    image: "/images/preview-home.png",
+  });
+
   return (
     <Layout>
+      <SEO
+        title="Data Analytics Program | Skilltrixa"
+        description="Train for data analyst and analytics engineer roles—hands-on analytics curriculum, fees, mentors, outcomes, and placement-aligned projects."
+        keywords="data analytics course India, SQL Power BI training, analytics bootcamp, Skilltrixa data science"
+        url={coursePath}
+        image="/images/preview-home.png"
+        jsonLd={courseLd}
+      />
 
       <section className="relative w-full bg-white overflow-hidden">
 

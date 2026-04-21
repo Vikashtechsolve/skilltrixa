@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import DashLayout from "./Dashboard/DashLayout";
+import SEO from "../component/SEO";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -66,6 +67,8 @@ const Dashboard = () => {
   };
 
   return (
+    <>
+      <SEO title="Dashboard | Skilltrixa" description="Internal dashboard." url="/dashboard" noindex />
     <DashLayout>
       {/* Top Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
@@ -179,6 +182,7 @@ const Dashboard = () => {
         </div>
       )}
     </DashLayout>
+    </>
   );
 };
 

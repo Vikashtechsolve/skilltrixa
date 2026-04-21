@@ -15,6 +15,8 @@ import HiringPartners from "./HiringPartners";
 import SuccessStories from "./SuccessStories";
 import FAQ from "./FAQ";
 import Layout from "../../../component/Layout";
+import SEO from "../../../component/SEO";
+import { absoluteUrl, buildCourseSchema } from "../../../config/seoConfig";
 
 const FullStack = () => {
   const images = [boyImg, girlImg];
@@ -28,8 +30,25 @@ const FullStack = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const coursePath = "/programs/full-stack-developer";
+  const courseLd = buildCourseSchema({
+    name: "Full Stack Developer Program — MERN | Skilltrixa",
+    description:
+      "Career-ready MERN stack training with Java, Spring ecosystem concepts, React, Node, MongoDB, projects, and placement support.",
+    url: absoluteUrl(coursePath),
+    image: "/images/preview-home.png",
+  });
+
   return (
     <Layout>
+      <SEO
+        title="Full Stack Developer Program (MERN) | Skilltrixa"
+        description="Become a job-ready full stack developer with Skilltrixa—MongoDB, Express, React, Node, real projects, curriculum, fees, and outcomes."
+        keywords="MERN stack course India, full stack developer bootcamp, React Node MongoDB training, Skilltrixa Java Spring"
+        url={coursePath}
+        image="/images/preview-home.png"
+        jsonLd={courseLd}
+      />
       <section className="relative w-full bg-white overflow-hidden">
         {/* HERO SECTION */}
         <div className="w-full bg-[linear-gradient(to_bottom,#FFF_20%,#FBEAEB_80%)] mx-auto mt-2 px-6 md:px-12 lg:px-18 grid grid-cols-1 md:grid-cols-2 gap-10 items-center pb-8 md:pb-36 lg:h-screen">
