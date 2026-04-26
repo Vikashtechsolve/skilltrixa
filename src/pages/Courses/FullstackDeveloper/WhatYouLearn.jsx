@@ -1,26 +1,26 @@
 import React from "react";
 
 // Mini Toolkit Icons
-import js from "../FullstackDeveloper/img/JS.png";
-import node from "../FullstackDeveloper/img/JS.png";
-import mongo from "../FullstackDeveloper/img/MongoDB.png";
-import html from "../FullstackDeveloper/img/HTML.png";
-import css from "../FullstackDeveloper/img/CSS 3.png";
-import tailwind from "../FullstackDeveloper/img/TailwindCSS.png";
-import github from "../FullstackDeveloper/img/github.png";
-import jwt from "../FullstackDeveloper/img/JWT.png";
-import postman from "../FullstackDeveloper/img/Postman.png";
-import vscode from "../FullstackDeveloper/img/VSCODE.png";
-import vercel from "../FullstackDeveloper/img/Vercel.png";
+import js from "./img/JS.png";
+import node from "./img/JS.png";
+import mongo from "./img/MongoDB.png";
+import html from "./img/HTML.png";
+import css from "./img/CSS 3.png";
+import tailwind from "./img/TailwindCSS.png";
+import github from "./img/github.png";
+import jwt from "./img/JWT.png";
+import postman from "./img/Postman.png";
+import vscode from "./img/VSCODE.png";
+import vercel from "./img/Vercel.png";
 
 // Macro Toolkit Icons
-import react from "../FullstackDeveloper/img/React.png";
-import redux from "../FullstackDeveloper/img/Redux.png";
-import cloudinary from "../FullstackDeveloper/img/Cloudinary.png";
-import render from "../FullstackDeveloper/img/React.png";
-import nodemailer from "../FullstackDeveloper/img/nodemailer.png";
-import socket from "../FullstackDeveloper/img/socket.io.png";
-import mui from "../FullstackDeveloper/img/MongoDB.png";
+import react from "./img/React.png";
+import redux from "./img/Redux.png";
+import cloudinary from "./img/cloudinary.png";
+import render from "./img/React.png";
+import nodemailer from "./img/nodemailer.png";
+import socket from "./img/socket.io.png";
+import mui from "./img/MongoDB.png";
 import check from "../../../assets/Check.png";
 
 const miniFeatures = [
