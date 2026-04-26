@@ -3,7 +3,7 @@ import { motion, useInView, AnimatePresence } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 import { 
   User, Mail, Phone, MessageSquare, Send, Sparkles, MapPin, Clock, 
-  Linkedin, Instagram, Youtube, ArrowRight, CheckCircle2, X, PartyPopper
+  Linkedin, Instagram, Youtube, Facebook, Twitter, ArrowRight, CheckCircle2, X, PartyPopper
 } from "lucide-react";
 import axios from "axios";
 import womenmentor from "../assets/womenmentor.png";
@@ -87,9 +87,11 @@ const ContactUs = () => {
   ];
 
   const socialLinks = [
-    { icon: Linkedin, name: "LinkedIn", image: linkedinIcon, color: "from-blue-600 to-blue-700", link: "https://www.linkedin.com/company/skilltrixa/" },
+    { icon: Linkedin, name: "LinkedIn", image: linkedinIcon, color: "from-blue-600 to-blue-700", link: "https://www.linkedin.com/in/divya-ojha-566b6b403" },
     { icon: Instagram, name: "Instagram", image: instagramIcon, color: "from-pink-500 to-purple-600", link: "https://www.instagram.com/skilltrixa/" },
     { icon: Youtube, name: "YouTube", image: null, color: "from-red-600 to-red-700", link: "https://www.youtube.com/channel/UCV3E1SHQNFEnbiwl0Sre0AQ" },
+    { icon: Facebook, name: "Facebook", image: null, color: "from-blue-700 to-blue-900", link: "https://www.facebook.com/share/1BSscPwyaF/" },
+    { icon: Twitter, name: "X", image: null, color: "from-gray-800 to-black", link: "https://x.com/Skilltrixa01" },
   ];
 
   const containerVariants = {

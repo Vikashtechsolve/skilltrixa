@@ -134,11 +134,21 @@ export default function Footer() {
 
           <div className="flex gap-5">
 
-            <Youtube className="cursor-pointer hover:text-red-700" />
-            <Facebook className="cursor-pointer hover:text-red-700" />
-            <Twitter className="cursor-pointer hover:text-red-700" />
-            <Instagram className="cursor-pointer hover:text-red-700" />
-            <Linkedin className="cursor-pointer hover:text-red-700" />
+            <a href="https://www.youtube.com/channel/UCV3E1SHQNFEnbiwl0Sre0AQ" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-inherit">
+              <Youtube className="cursor-pointer hover:text-red-700" />
+            </a>
+            <a href="https://www.facebook.com/share/1BSscPwyaF/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-inherit">
+              <Facebook className="cursor-pointer hover:text-red-700" />
+            </a>
+            <a href="https://x.com/Skilltrixa01" target="_blank" rel="noopener noreferrer" aria-label="X" className="text-inherit">
+              <Twitter className="cursor-pointer hover:text-red-700" />
+            </a>
+            <a href="https://www.instagram.com/skilltrixa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-inherit">
+              <Instagram className="cursor-pointer hover:text-red-700" />
+            </a>
+            <a href="https://www.linkedin.com/in/divya-ojha-566b6b403" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-inherit">
+              <Linkedin className="cursor-pointer hover:text-red-700" />
+            </a>
 
           </div>
 

@@ -8,7 +8,7 @@ import {
 } from "../config/seoConfig";
 
 const OG_LOCALE = "en_IN";
-const TWITTER_HANDLE = "@skilltrixa";
+const TWITTER_HANDLE = "@Skilltrixa01";
 
 /**
  * @param {object} props
