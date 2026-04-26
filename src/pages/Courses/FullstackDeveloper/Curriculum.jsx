@@ -201,9 +201,8 @@ const curriculumData = {
     {
       title: "Module 1",
       subtitle: "Programming Fundamentals & Advanced JavaScript",
-      summary: "This module is designed to build a deep and advanced understanding of JavaScript from the ground up. You’ll master both core and advanced concepts required to write optimized, production-ready code used in real-world full-stack applications.",
       summary:
-        "This module builds a strong programming foundation using modern JavaScript. You’ll learn how to write clean, efficient logic and understand how JavaScript works behind the scenes, preparing you for advanced full-stack development.",
+        "This module builds a deep understanding of JavaScript from the ground up—core through advanced concepts, how the language works behind the scenes, and how to write clean, efficient, production-ready code for real-world full-stack applications.",
       content: [
         {
           heading: "Topics Covered",
