@@ -10,6 +10,7 @@ import womenmentor from "../assets/womenmentor.png";
 const vtsImage = "/logo.svg";
 import linkedinIcon from "../assets/linkedin.png";
 import instagramIcon from "../assets/instagram.svg";
+import { LINKEDIN_PROFILE_URL } from "../config/seoConfig";
 
 const baseUrl = import.meta.env.VITE_APP_API_URL; 
 
@@ -87,11 +88,11 @@ const ContactUs = () => {
   ];
 
   const socialLinks = [
-    { icon: Linkedin, name: "LinkedIn", image: linkedinIcon, color: "from-blue-600 to-blue-700", link: "https://www.linkedin.com/in/divya-ojha-566b6b403" },
     { icon: Instagram, name: "Instagram", image: instagramIcon, color: "from-pink-500 to-purple-600", link: "https://www.instagram.com/skilltrixa/" },
-    { icon: Youtube, name: "YouTube", image: null, color: "from-red-600 to-red-700", link: "https://www.youtube.com/channel/UCV3E1SHQNFEnbiwl0Sre0AQ" },
-    { icon: Facebook, name: "Facebook", image: null, color: "from-blue-700 to-blue-900", link: "https://www.facebook.com/share/1BSscPwyaF/" },
+    { icon: Facebook, name: "Facebook", image: null, color: "from-blue-700 to-blue-900", link: "https://www.facebook.com/people/Skilltrixa/61568687068681/" },
     { icon: Twitter, name: "X", image: null, color: "from-gray-800 to-black", link: "https://x.com/Skilltrixa01" },
+    { icon: Linkedin, name: "LinkedIn", image: linkedinIcon, color: "from-blue-600 to-blue-700", link: LINKEDIN_PROFILE_URL },
+    { icon: Youtube, name: "YouTube", image: null, color: "from-red-600 to-red-700", link: "https://www.youtube.com/channel/UCV3E1SHQNFEnbiwl0Sre0AQ" },
   ];
 
   const containerVariants = {

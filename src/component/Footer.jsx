@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 const logo = "/logo.svg";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import { LINKEDIN_PROFILE_URL } from "../config/seoConfig";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -116,10 +117,10 @@ const Footer = () => {
           <h3 className="font-semibold text-base heading-primary font-playfair mb-4">GET IN TOUCH</h3>
           <div className="flex space-x-4 text-gray-600 text-xl">
             <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCV3E1SHQNFEnbiwl0Sre0AQ"><FaYoutube className="hover:text-red-600 cursor-pointer" /></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/share/1BSscPwyaF/"><FaFacebookF className="hover:text-red-600 cursor-pointer" /></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/people/Skilltrixa/61568687068681/"><FaFacebookF className="hover:text-red-600 cursor-pointer" /></a>
             <a target="_blank" rel="noopener noreferrer" href="https://x.com/Skilltrixa01"><FaTwitter className="hover:text-red-600 cursor-pointer" /></a>
             <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/skilltrixa/"><FaInstagram className="hover:text-red-600 cursor-pointer" /></a>
-            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/divya-ojha-566b6b403"><FaLinkedinIn className="hover:text-red-600 cursor-pointer" /></a>
+            <a target="_blank" rel="noopener noreferrer" href={LINKEDIN_PROFILE_URL}><FaLinkedinIn className="hover:text-red-600 cursor-pointer" /></a>
           </div>
         </div>
       </div>

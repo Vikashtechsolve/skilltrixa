@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FiStar, FiLinkedin } from "react-icons/fi";
 import image from "./../assets/whatstudentsdays.png";
+import { LINKEDIN_PROFILE_URL } from "../config/seoConfig";
 
 const Testimonials = () => {
   const testimonials = [
@@ -146,11 +147,13 @@ const Testimonials = () => {
                     </p>
                   </div>
                   <motion.a
-                    href="#"
+                    href={LINKEDIN_PROFILE_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-blue-500 flex items-center justify-center text-white hover:bg-blue-600 transition-colors flex-shrink-0 shadow-lg"
                     whileHover={{ scale: 1.15, rotate: 5 }}
                     whileTap={{ scale: 0.9 }}
-                    aria-label="LinkedIn profile"
+                    aria-label="Skilltrixa on LinkedIn"
                   >
                     <FiLinkedin className="w-5 h-5 md:w-6 md:h-6" />
                   </motion.a>

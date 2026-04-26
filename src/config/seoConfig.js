@@ -16,6 +16,10 @@ export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/preview.png`;
 export const DEFAULT_KEYWORDS =
   "Skilltrixa, Deviktech, Java training, Spring Boot, React, full stack bootcamp, data analytics course, mentorship, coding contests, India";
 
+/** Official LinkedIn profile URL (used in footers, contact, testimonials CTA, JSON-LD). */
+export const LINKEDIN_PROFILE_URL =
+  "https://www.linkedin.com/in/divya-ojha-566b6b403/";
+
 export function absoluteUrl(path) {
   if (!path) return SITE_URL;
   const s = String(path).trim();
@@ -38,6 +42,12 @@ export function buildOrganizationSchema() {
       "@type": "Organization",
       name: "Deviktech Education",
     },
+    sameAs: [
+      "https://www.instagram.com/skilltrixa/",
+      "https://www.facebook.com/people/Skilltrixa/61568687068681/",
+      "https://x.com/Skilltrixa01",
+      LINKEDIN_PROFILE_URL,
+    ],
   };
 }
 

@@ -12,7 +12,7 @@ import {
   Instagram,
   Linkedin,
 } from "lucide-react";
-
+import { LINKEDIN_PROFILE_URL } from "../../../config/seoConfig";
 
 export default function Footer() {
   return (
@@ -137,7 +137,7 @@ export default function Footer() {
             <a href="https://www.youtube.com/channel/UCV3E1SHQNFEnbiwl0Sre0AQ" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-inherit">
               <Youtube className="cursor-pointer hover:text-red-700" />
             </a>
-            <a href="https://www.facebook.com/share/1BSscPwyaF/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-inherit">
+            <a href="https://www.facebook.com/people/Skilltrixa/61568687068681/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-inherit">
               <Facebook className="cursor-pointer hover:text-red-700" />
             </a>
             <a href="https://x.com/Skilltrixa01" target="_blank" rel="noopener noreferrer" aria-label="X" className="text-inherit">
@@ -146,7 +146,7 @@ export default function Footer() {
             <a href="https://www.instagram.com/skilltrixa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-inherit">
               <Instagram className="cursor-pointer hover:text-red-700" />
             </a>
-            <a href="https://www.linkedin.com/in/divya-ojha-566b6b403" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-inherit">
+            <a href={LINKEDIN_PROFILE_URL} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-inherit">
               <Linkedin className="cursor-pointer hover:text-red-700" />
             </a>
 
